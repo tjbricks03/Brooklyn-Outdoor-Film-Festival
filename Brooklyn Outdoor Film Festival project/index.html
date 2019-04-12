@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Brooklyn Outdoor Film Festival</title>
+        <meta name="description" content="Brooklyn Outdoor Film Festival">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel='stylesheet' type='text/css'>
+        <link href="css/one-page-wonder.min.css" rel="stylesheet">
+        
+        <style type="text/css">
+
+              /*--- Navbar ---*/
+
+              .navbar-custom {
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  background: rgba(0,0,0,.8);
+              }
+              
+              .navbar {
+                  position: relative;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -ms-flex-pack: justify;
+                  justify-content: space-between;
+                  padding: .5rem 1rem;
+              }
+
+              .fixed-top {
+                  position: scroll;
+                  top: 0;
+                  right: 0;
+                  left: 0;
+                  z-index: 1030;
+              }
+
+              .text-white {
+                  color: #FFF!important;
+              }
+
+               /*-- Header Masthead Content -- */
+
+              header.masthead {
+                position: relative;
+                overflow: hidden;
+                padding-top: calc(7rem + 72px);
+                padding-bottom: 7rem;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: scroll;
+                background-size: cover;
+              }
+
+              header.masthead .masthead-content {
+                z-index: 1;
+                position: relative;
+              }
+
+              .masthead {
+                overflow: hidden;
+                padding: 1em;
+                border-top: 6px;
+                background: linear-gradient(0deg,#708090  0,#2f4f4f 100%);
+              }
+
+              .responsive-image {
+                background-position: center;
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+              }
+              
+              .masthead-heading {
+                font-size: 60px;
+                color: #fff;
+                text-align: center;
+                -webkit-animation: glow 1s ease-in-out infinite alternate;
+                -moz-animation: glow 1s ease-in-out infinite alternate;
+                animation: glow 1s ease-in-out infinite alternate;
+              }
+
+              @media (min-width: 992px) {
+                .navbar-expand-lg {
+                  -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap;
+                  -ms-flex-pack: start;
+                  justify-content: flex-start;
+                }
+
+                header.masthead {
+                  padding-top: calc(10rem + 55px);
+                  padding-bottom: 10rem;
+                }
+              }
+   
+
+              /*-- Background Video --*/
+
+
+              @media screen and (min-width: 768px){
+              .bg-video--layer {
+                min-height: 500px;
+                }
+              }
+
+              @media screen and (min-width: 600px) {
+              .bg-video--layer {
+                  min-height: 400px;
+                }
+              }
+
+              .bg-video--layer {
+                text-align: center;
+                color: #FFF;
+                min-height: 360px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                overflow: hidden;
+              }
+
+              .video-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                background-position: center center;
+                background-size: cover;
+              }
+
+              .bg-video--overlay {
+                position: relative;
+                z-index: 2; 
+              }
+
+              .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: .7;
+                z-index: 1;
+              }
+              
+              .video-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                pointer-events: none; /* Allows right click menu on the video */
+                background: url($overlay_pattern) left top repeat;
+                opacity: $overlay_opacity;
+              }
+
+              .video-hero--content {
+                position: relative;
+                text-align: center;
+                color: #FFF;
+                margin: 30px 0;
+                text-shadow: 0 0 5px rgba(0,0,0,0.4);
+              }
+
+              .jquery-background-video-wrapper {
+                position: relative;
+                overflow: hidden;
+                background-position: center center;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+              }
+
+              .jquery-background-video {
+                position: absolute;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                top: 50%;
+                left: 50%;
+                -o-object-fit: contain;
+                object-fit: contain;
+                -webkit-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+              }
+
+              /**
+              * Fade in videos
+              * Note the .js class - so non js users still
+              * see the video
+              */
+
+
+              .js .jquery-background-video {
+                opacity: 0;
+                -webkit-transition: opacity 300ms linear;
+                transition: opacity 300ms linear;
+              }
+
+              .js .jquery-background-video.is-visible {
+                opacity: 1;
+              }
+
+              @-webkit-keyframes glow {
+                from {
+                  text-shadow: 0 0 10px #4682B4, 0 0 20px #4682B4, 0 0 30px #4682B4, 0 0 40px #4682B4, 0 0 50px #4682B4, 0 0 60px #4682B4, 0 0 70px #4682B4;
+                }
+                    
+                to {
+                  text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff, 0 0 70px #00bfff, 0 0 80px #00bfff;
+                }
+              }
+
+              .btn[class*=btn-outline-] {
+                padding-top: .7rem;
+                padding-bottom: .7rem;
+              }
+
+              button, [type=button] {
+                -webkit-appearance: none;
+              }
+              
+              .btn-rounded {
+                  -webkit-border-radius: 10em;
+                  border-radius: 10em;
+              }
+
+              .btn-outline-default {
+                  border: 2px solid #00FA9A!important;
+                  background-color: transparent!important;
+                  color: #00FA9A!important;
+              }
+              
+              .btn-outline-primary 
+              .btn {
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+                padding: .84rem 2.14rem;
+                font-size: .81rem;
+                transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+                margin: .375rem;
+                text-transform: uppercase;
+                white-space: normal;
+                word-wrap: break-word;
+                display: inline-block;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 1.5;
+              }
+
+              .waves-effect {
+                  position: relative;
+                  cursor: pointer;
+                  overflow: hidden;
+                  -webkit-user-select: none;
+                  -moz-user-select: none;
+                  -ms-user-select: none;
+                  user-select: none;
+                  -webkit-tap-highlight-color: transparent;
+              }
+
+              .btn-primary {
+                text-align: left;
+              }
+              
+
+              /*--- About/News/Movies ---*/
+
+
+              .display-8 {
+                  color:#708090;
+              }
+
+              .display-9 {
+                    font-size: 25px;
+                    background: radial-gradient(
+                    circle farthest-corner at center center,
+                    #ccc,
+                    #333
+                  ) no-repeat;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+              }
+              
+              .text-center {
+                text-align: center;
+              }
+
+              h2, p {
+                text-align: justify;
+              }
+              
+              @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+              @import url(https://fonts.googleapis.com/css?family=Squada+One);
+              #logo1, #logo2, #logo3 {
+                font-family: 'Open Sans', sans-serif;
+                color: #555;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: 800;
+                letter-spacing: -3px;
+                line-height: 0;
+                text-shadow: #EDEDED 3px 2px 0;
+                position: relative;
+                background:#C0C0C0;
+              }
+
+              #logo1:after {
+                content:"about";
+                position: absolute;
+                left: 8px;
+                top: 32px;
+              }
+
+              #logo2:after {
+                content:"news";
+                position: absolute;
+                left: 8px;
+                top: 32px;
+              }
+
+              #logo3:after {
+              content:"movies";
+              position: absolute;
+              left: 8px;
+              top: 32px;
+              }
+
+              #logo1:after, #logo2:after, #logo3:after {
+                /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+                background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+                background-size: 4px 4px;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                z-index: -5;
+                display: block;
+                text-shadow: none;
+              }
+
+              .section-intro {
+                text-align: center;
+                padding: 3rem 0;
+                margin-block-end: -99px;
+                writing-mode: horizontal-tb;
+              }
+
+              @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+              @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+              .word5 {
+                display:block;
+                text-align:justify;
+                font-family: "BenchNine";
+                line-height:0.8;
+                text-transform:uppercase;
+                letter-spacing:0px;
+                color:#4682b4;
+                font-size: 1.5rem;
+              }
+
+              .sub-heading {
+                color: #008000;
+              }
+
+              h3 {
+                padding-block-start: -30px; 
+                writing-mode: horizontal-tb;
+              }
+
+              h3 {
+                margin-block-end: -75px;
+                writing-mode: horizontal-tb;
+              }
+              
+              @media screen and (max-width: 531px) {
+                h3 {
+                margin-block-end: 5px;
+                writing-mode: horizontal-tb;
+                }
+              }
+
+               /*--- Movies ---*/
+               
+
+               @media screen and (max-width: 527px) {
+                img {
+                  flex-basis: 100%;
+                  margin-left: -50px;
+                  margin-block-start: -45px;
+                  margin-block-end: -45px;
+                  writing-mode: horizontal-tb;
+                }
+
+                .img-fluid {
+                  margin-left: 2px;
+                }
+
+                .btn-outline-primary  {
+                  margin-inline-end: 50%;
+                }
+              }
+          
+              @media screen and (max-width: 767px) {
+                .col {
+                  flex-basis: 100%;
+                  margin: auto;
+                }
+                .card-header {
+                  flex-basis: 100%;
+                  margin-block-end: -45px;
+                  writing-mode: horizontal-tb;
+                  margin-left: 75px;
+                }
+                .btn-outline-primary {
+                  margin-left: 150px;
+                }
+               }
+
+               @media screen and (max-width: 991px) {
+                .card-header {
+                  margin-block-start: 45px;
+                  padding: 2.5rem 1.25rem;
+                  margin-bottom: .10rem;
+                }
+              }
+
+              .section {
+                padding-top: .75rem;
+                padding: .30rem 0rem;
+              }
+
+              .jumbotron{
+                margin-bottom: 0rem!important;
+              }
+
+              .img-fluid {
+                max-width: 100%;
+                height: auto;
+              }
+              
+              img {
+                vertical-align: middle;
+                border-style: none;
+              }
+              
+              .card-header {
+                padding: 2.5rem 1.25rem;
+                margin-bottom: .10rem;
+                background-color: rgba(255,255,255);
+                border-radius: 0;
+              }
+
+              .card-title {
+                font-size: 1.55rem;
+                color: #ED6565;
+              }
+
+              .card-text {
+                margin-right: .70rem;
+                margin-block-end: -30px; 
+                writing-mode: horizontal-tb;
+              }
+
+              .btn[class*=btn-outline-] {
+                  padding-top: .7rem;
+                  padding-bottom: .7rem;
+              }
+
+              .btn-outline-primary {
+                margin-block-end: 20px; 
+                writing-mode: horizontal-tb;
+              }
+
+              .wwUB2c {
+                color: #708090;
+                font-family: arial,sans-serif;
+                margin: 4px 0;
+                overflow: hidden;
+              }
+
+
+              /*--- Sponsors ---*/
+
+
+              .fg-dark {
+                color: #1d1d1d !important;
+              }
+
+              .bg-white {
+                background-color: #ffffff !important;
+              }
+
+              .container-fluid {
+                width: 100%;
+                max-width: none;
+                padding-right: 12px;
+                padding-left: 12px;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+              }
+
+              @media screen and (min-width: 768px) {
+              .colspan-md-2, .cell-md-2 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 16.66667%;
+                flex: 0 0 16.66667%;
+                max-width: 16.66667%;
+                }
+              .enlarge-1-md {
+                font-size: 1.1em !important;
+                font-style: normal;
+                }
+              }
+
+              .mt-10 {
+                margin-top: 40px !important;
+              }
+
+              .pb-20 {
+                padding-bottom: 80px !important;
+              }
+
+              .pt-10 {
+                padding-top: 40px !important;
+              }
+
+              @media screen and (max-width: 527px) { 
+                .special-thanks [class*=cell-] {
+                margin-left: 80px;
+                margin-top: 30px;
+                margin-right: 30px;
+                margin-bottom: 65px;
+                }
+              }
+
+
+              .special-thanks {
+                justify-content: space-between;
+                align-items: center;
+              }
+
+              .special-thanks [class*=cell-] {
+                text-align: center;
+                margin-top: 20px;
+              }
+
+              .row {
+                display: flex;
+                margin-left: -12px;
+                margin-right: -12px;
+              }
+
+              .cell-md-2 {
+                position: relative;
+                display: block;
+                padding: 0 12px;
+                width: 100%;
+                min-height: 1px;
+              }
+
+
+               /*--- Modal Form ---*/
+
+
+              .modal-dialog .modal-content {
+                box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+                border: 0;
+              }
+
+              .modal-content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                pointer-events: auto;
+                background-color: #fff;
+                background-clip: padding-box;
+                outline: 0;
+              }
+
+              .text-center {
+                text-align: center!important;
+              }
+
+              .modal-header {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                border-bottom: none;
+              }
+
+              .modal-content {
+                pointer-events: auto;
+              }
+
+              .modal-backdrop {
+                z-index: 0;
+              }
+
+              .font-weight-bold {
+                font-weight: 700!important;
+              }
+
+              .w-100 {
+                  width: 100%!important;
+              }
+
+              .modal-title {
+                margin-bottom: 0;
+                line-height: 1.5;
+              }
+
+              h4 {
+                font-size: 1.3rem;
+                display: block;
+                margin-block-start: 1.33em;
+                margin-block-end: 1.33em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+              }
+
+              @media (min-width: 768px) {
+              .form-horizontal .control-label {
+                padding-top: 7px;
+                margin-bottom: 0;
+                text-align: right;
+               }
+              }
+
+              @media (min-width: 768px){
+              .col-sm-2 {
+                width: 19.66666667%;
+                float: left;
+                }
+              }
+              
+              .col-sm-2, .col-md-3, .col-md-9, .col-sm-10 {
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+              }
+
+              label {
+                display: inline-block;
+                max-width: 100%;
+                font-weight: 700;
+              }
+
+              .tab-content>.active {
+                display: block;
+                visibility: visible;
+              }
+
+              @media (min-width: 768px) {
+              .col-sm-10 {
+                width: 83.33333333%;
+                }
+              }
+
+              @media (min-width: 768px) {
+              .col-sm-10, .col-md-9, .col-md-3 {
+                float: left;
+                }
+              }
+
+              @media (min-width: 992px) {
+              .col-md-3 {
+                width: 25%;
+                }
+              }
+
+              .form-control {
+                display: block;
+                width: 100%;
+                height: 34px;
+                padding: 6px 12px;
+                font-size: 14px;
+                line-height: 1.42857143;
+                color: #555;
+                background-color: #fff;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+              }
+
+              select {
+                font-family: inherit;
+                text-transform: none;
+                margin: 0;
+                font: inherit;
+                -webkit-appearance: menulist;
+                align-items: center;
+                white-space: pre;
+                -webkit-rtl-ordering: logical;
+                cursor: default;
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-align: start;
+              }
+
+              select:not(:-internal-list-box) {
+                overflow: visible !important;
+              }
+
+              option {
+                font-weight: normal;
+                display: block;
+                white-space: pre;
+                min-height: 1.2em;
+                padding: 0px 2px 1px;
+              }
+
+              @media (min-width: 992px) {
+              .col-md-9 {
+                width: 75%;
+                }
+              }
+
+              input {
+                font-family: inherit;
+                margin: 0;
+                font: inherit;
+                -webkit-appearance: textfield;
+                -webkit-rtl-ordering: logical;
+                cursor: text;
+                text-rendering: auto;
+                letter-spacing: normal;
+                word-spacing: normal;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                text-align: start;
+                -webkit-writing-mode: horizontal-tb !important;
+              }
+              
+              .btn-sm {
+                padding: 5px 10px;
+                font-size: 12px;
+                line-height: 1.5;
+                border-radius: 3px;
+              }
+
+              .btn-primary {
+                color: #fff;
+                background-color: #428bca;
+                border-color: #357ebd;
+              }
+
+              button {
+                font-family: inherit;
+                -webkit-appearance: button;
+                text-transform: none;
+                overflow: visible;
+                margin: 0;
+                font: inherit;
+                align-items: flex-start;
+              }
+
+              .btn-sm {
+                margin-block-end: 20px; 
+                writing-mode: horizontal-tb;
+              }
+
+              .btn-sm {
+                padding: 5px 10px;
+                font-size: 12px;
+                line-height: 1.5;
+                border-radius: 3px;
+              }
+
+              .btn-default {
+                color: #333;
+                background-color: #fff;
+                border-color: #ccc;
+              }
+              
+
+              /*--- Footer ---*/
+
+
+              footer {
+                display: block;
+                text-align: center;
+                position: relative;
+                margin: 0 auto;
+              }
+
+              .bg-black {
+                background-color: #000 !important;
+              }
+
+              .svg-inline--fa {
+                vertical-align: -0.200em;
+              }
+
+              .rounded-social-buttons {
+                text-align: center;
+              }
+
+              .rounded-social-buttons .social-button {
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                width: 3.125rem;
+                height: 3.125rem;
+                border: 0.125rem solid transparent;
+                padding: 0;
+                text-decoration: none;
+                text-align: center;
+                color: #fefefe;
+                font-size: 1.5625rem;
+                font-weight: normal;
+                line-height: 2em;
+                border-radius: 1.6875rem;
+                transition: all 0.5s ease;
+                margin-right: 0.25rem;
+                margin-bottom: 0.25rem;
+              }
+
+              .rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+                -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                        transform: rotate(360deg);
+              }
+
+              .rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+                font-size: 25px;
+              }
+
+              .rounded-social-buttons .social-button.facebook {
+                background: #3b5998;
+              }
+
+              .rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+                color: #3b5998;
+                background: #fefefe;
+                border-color: #3b5998;
+              }
+
+              .rounded-social-buttons .social-button.twitter {
+                background: #55acee;
+              }
+
+              .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+                color: #55acee;
+                background: #fefefe;
+                border-color: #55acee;
+              }
+
+              .rounded-social-buttons .social-button.linkedin {
+                background: #007bb5;
+              }
+
+              .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+                color: #007bb5;
+                background: #fefefe;
+                border-color: #007bb5;
+              }
+
+              .rounded-social-buttons .social-button.youtube {
+                background: #bb0000;
+              }
+
+              .rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+                color: #bb0000;
+                background: #fefefe;
+                border-color: #bb0000;
+              }
+
+              .rounded-social-buttons .social-button.instagram {
+                background: #125688;
+              }
+
+              .rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+                color: #125688;
+                background: #fefefe;
+                border-color: #125688;
+              }
+
+              /*-- Back to top button --*/
+
+              #button {
+                  display: inline-block;
+                  background-color: #FF9800;
+                  width: 50px;
+                  height: 50px;
+                  text-align: center;
+                  border-radius: 4px;
+                  position: fixed;
+                  bottom: 30px;
+                  right: 30px;
+                  transition: background-color .3s, 
+                    opacity .5s, visibility .5s;
+                  opacity: 0;
+                  visibility: hidden;
+                  z-index: 1000;
+                }
+              #button::after {
+                  content: "\f077";
+                  font-family: FontAwesome;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-size: 2em;
+                  line-height: 50px;
+                  color: #fff;
+              }
+              #button:hover {
+                  cursor: pointer;
+                  background-color: #333;
+              }
+                #button:active {
+                  background-color: #555;
+              }
+                #button.show {
+                  opacity: 1;
+                  visibility: visible;
+              }
+        </style>
+  </head>
+        <body>
+
+          <!--- Navbar --->
+
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="assets/Brooklyn.png" alt="logo" style="max-width:200px" class="img-responsive"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#logo1">About</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#logo2">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#logo3">Movies</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+           
+
+          <!-- Header background video -->
+
+                  <div class="video-hero jquery-background-video-wrapper demo-video-wrapper video-responsive">
+                          <video class="jquery-background-video" autoplay muted loop poster="https://d2ezlykacdqcnj.cloudfront.net/busy-new-york-intersection/busy-new-york-intersection.jpg">
+                            <source src="https://d2ezlykacdqcnj.cloudfront.net/busy-new-york-intersection/busy-new-york-intersection.mp4" type="video/mp4">
+                            <source src="https://d2ezlykacdqcnj.cloudfront.net/busy-new-york-intersection/busy-new-york-intersection.webm" type="video/webm">
+                            <source src="https://d2ezlykacdqcnj.cloudfront.net/busy-new-york-intersection/busy-new-york-intersection.ogv" type="video/ogg"> 
+                          </video>
+                          <div class="video-overlay"></div>
+                          <div class="page-width">
+                              <div class="video-hero--content">
+                                  <h1 class="glow masthead-heading mb-0">Brooklyn Outdoor Film Festival</h1>
+                                  <a href="#logo3" class="btn btn-outline-default btn-xl rounded-pill waves-effect mt-5">Explore Movies</a>
+                              </div>
+                          </div>
+                  </div>
+            
+         
+          <!-- About -->
+                <section class="section-intro">
+                    <div class="container" id="Home">
+                      <a href="#" id="logo1">About</a>
+                    </div>
+                    <div class="container">
+                        <div class="jumbotron" id="Home" style="background:transparent">
+                            <h2 class="display-9 text-center">For those about to rock...all the outdoor movies will be playing in Brooklyn Bridge Park this summer.</h2>
+                            <br>
+                            <p>Brooklyn Outdoor Film Festival is a summer must that has earned a large and loyal following. 
+                              Since its launch in 2018, we’ve wowed, entertained, thrilled, and pulled at the heartstrings with the maximum of 5,000 moviegoers, making our program one of New York City’s favorite summer film series.
+                              The film showing will take place on August 5th to 8th. 
+                              There is no better place to be on a hot summer night than watching a classic film and enjoying the breeze off of the East River from Harbor View Lawn with the dazzling Manhattan skyline before you.</p>
+                          </div>
+                        </div>
+                      </section>
+                    <hr>
+
+          <!-- News -->
+
+                  <section class="section-intro">
+                    <div class="container" id="News">
+                        <a href="#" id="logo2">News</a>
+                    </div>
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6">
+                          <div class="p-5">
+                            <img class="img-fluid square" id="News" src="images/Bridge Park.png">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="p-5">
+                            <h2 class="display-9">Experience entertainment in Brooklyn's Bridge Park</h2>
+                            <p>Brooklyn Bridge Park Conservancy’s “Movies With A View” series will kick off again on Thursday, July 12 and this summer, it is taking female representation to the next level! The conservancy is adding SHE TALKS, a new talk series that will put leading women in the fields of media, the arts and politics center stage as they share their perspectives on their fields and New York City.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+  
+                  <section>
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                          <div class="p-5">
+                            <img class="img-fluid square" id="News" src="images/Governor's Island.png">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                          <div class="p-5">
+                            <h2 class="display-9">Experience entertainment in Governor's Island</h2>
+                            <p>Free screenings throughout the summer take place on the newly restored eight-acre parade ground during Governors Island’s Late Fridays. All screenings are free and open to the public with pre-show entertainment kicking off at 7:00pm, including a beer garden and food vendors. Films begin at dusk.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                      <div class="container">
+                        <div class="row align-items-center">
+                          <div class="col-lg-6">
+                            <div class="p-5">
+                              <img class="img-fluid square" id="News" src="images/Rooftop.png">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="p-5">
+                              <h2 class="display-9">Experience entertainment on Rooftop</h2>
+                              <p>Rooftop Films roves around Brooklyn’s rooftops, courtyards, and now its cemeteries. Catch one at Green-Wood this summer, where there is plenty of room to spread out.</p>
+                              <p><i>For more news update please visit...</i></p><h5><a href="https://bklyner.com/">BKLYNER.</a></h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  <hr>
+              
+          <!-- Movies -->
+
+              <section class="section-intro">
+                <div class="container" id="Movies">
+                    <a href="#" id="logo3">Movies</a>
+                </div>
+                  <div class="container">
+                      <div class="jumbotron" id="Movies" style="background:transparent">
+                          <h2 class="display-9 text-center">Check our free upcoming new films on August 5th until August 8th, 2019.</h2>
+                          <br>
+                          <h4 class="sub-heading">Note: <i>All of the following movies are</i> <strong><u>FREE</u></strong> <i>and they are just</i> <strong><u>newly released this year!</u></strong> 
+                            <i>The venue for the film showing will be held in </i><a href="https://www.brooklynbridgepark.org/">BROOKLYN BRIDGE PARK.</a> <strong>So grab your seats now!</strong></h4>
+                      </div>
+                  </div>
+              </section>
+
+                  <div class="container">
+                      <div class="jumbotron" id="Movies" style="background:transparent">
+                          <h3 class="display-8 text-center word word5">- Movies for the 5th of August, 2019 -</h3>
+                      </div>
+                  </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Aladdin.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Alladin 2019</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Romance ‧ 2h - <strong><u>Film showing starts at 18:00</u></strong></span></div>
+                                    <p class="card-text">Young Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Avengers Endgame.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-80">
+                                  <span class="flow-text">
+                                    <h4 class="card-title">Avengers: Endgame</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Science Fiction ‧ 3h 2m - <strong><u>Film showing starts at 21:00</u></strong></span></div>
+                                    <p class="card-text">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle.   Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="jumbotron" id="Movies" style="background:transparent">
+                            <h3 class="display-8 text-center word word5">- Movies for the 6th of August, 2019 -</h3>
+                        </div>
+                    </div>
+
+                    <div class="section">    
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Dumbo.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Dumbo</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Adventure ‧ 1h 52m - <strong><u>Film showing starts at 18:00</u></strong></span></div>
+                                    <p class="card-text">Struggling circus owner Max Medici enlists a former star and his two children to care for Dumbo, a baby elephant born with oversized ears. When the family discovers that the animal can fly, it soon becomes the main attraction -- bringing in huge audiences and revitalizing the run-down circus. The elephant's magical ability also draws the attention of V.A. Vandevere, an entrepreneur who wants to showcase Dumbo in his latest, larger-than-life entertainment venture.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Spider-Man Far From Home.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Spiderman: Far from home</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Science Fiction ‧ 2h - <strong><u>Film showing starts at 21:00</u></strong></span></div>
+                                    <p class="card-text">Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury suddenly shows up in his hotel room. Parker soon finds himself donning the Spider-Man suit to help Fury stop the evil Mysterio from wreaking havoc across the continent.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="jumbotron" id="Movies" style="background:transparent">
+                            <h3 class="display-8 text-center word word5">- Movies for the 7th of August, 2019 -</h3>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Star Wars Episode IX.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Star Wars: Episode IX</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Science Fiction ‧ 2h - <strong><u>Film showing starts at 18:00</u></strong></span></div>
+                                    <p class="card-text">Star Wars: Episode IX is an upcoming American epic space opera film produced, co-written and directed by J. J. Abrams. It will be the third installment of the Star Wars sequel trilogy, following The Force Awakens and The Last Jedi, and the final episode of the main Star Wars film franchise.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Toy Story 4.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Toy Story 4</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Adventure ‧ 2h - <strong><u>Film showing starts at 21:00</u></strong></span></div>
+                                    <p class="card-text">Woody, Buzz Lightyear and the rest of the gang embark on a road trip with Bonnie and a new toy named Forky. The adventurous journey turns into an unexpected reunion as Woody's slight detour leads him to his long-lost friend Bo Peep. As Woody and Bo discuss the old days, they soon start to realize that they're worlds apart when it comes to what they want from life as a toy.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="jumbotron" id="" style="background:transparent">
+                            <h3 class="display-8 text-center word word5">- Movies for the 8th of August, 2019 -</h3>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap" id="card" >
+                              <div class="card-header border-0">
+                                  <img src="images/The Lego Movie 2.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">The Lego Movie 2: The Second Part</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Science Fiction ‧ 1h 47m - <strong><u>Film showing starts at 18:00</u></strong></span></div>
+                                    <p class="card-text">The citizens of Bricksburg face a dangerous new threat when LEGO DUPLO invaders from outer space start to wreck everything in their path. The battle to defeat the enemy and restore harmony to the LEGO universe takes Emmet, Lucy, Batman and the rest of their friends to faraway, unexplored worlds that test their courage and creativity.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="section">
+                      <div class="container">
+                          <div class="card flex-row flex-wrap">
+                              <div class="card-header border-0">
+                                  <img src="images/Wonder Park.png" alt="" width="300">
+                              </div>
+                              <div class="card-block px-2 col w-100">
+                                <span class="flow-text">
+                                    <h4 class="card-title">Wonder Park</h4>
+                                    <div class="wwUB2c kno-fb-ctx"><span>2019 ‧ Fantasy/Adventure ‧ 1h 26m - <strong><u>Film showing starts at 21:00</u></strong></span></div>
+                                    <p class="card-text">Wonder Park tells the story of a magnificent amusement park where the imagination of a wildly creative girl named June comes alive.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-xl rounded-pill waves-effect mt-5" data-toggle="modal" data-target="#modalContactForm">Reserve your seats!</a>
+                                </span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                 
+          
+                            <!--- Modal --->
+
+                                  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center">
+                                              <h4 class="modal-title w-100 font-weight-bold" id="Register Popup">Register</h4>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                      
+                                            <div class="form-group">
+                                                <label for="email" class="col-sm-2 control-label">Name</label>
+                                                <div class="col-sm-10">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <select class="form-control">
+                                                                <option>Mr.</option>
+                                                                <option>Ms.</option>
+                                                                <option>Mrs.</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                            <input type="text" class="form-control" placeholder="Name" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email" class="col-sm-2 control-label">
+                                                    Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">
+                                                    Mobile</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                                </div>
+                                            </div>
+                                      
+                                              <div class="form-group">
+                                                  <label for="email" class="col-sm-2 control-label">Seats</label>
+                                                  <div class="col-sm-10">
+                                                      <div class="row">
+                                                          <div class="col-md-3">
+                                                              <select class="form-control">
+                                                                  <option>1</option>
+                                                                  <option>2</option>
+                                                                  <option>3</option>
+                                                                  <option>4</option>
+                                                                  <option>5</option>
+                                                                  <option>6</option>
+                                                                  <option>7</option>
+                                                                  <option>8</option>
+                                                                  <option>9</option>
+                                                                  <option>10</option>
+                                                                  <option>11</option>
+                                                                  <option>12</option>
+                                                                  <option>13</option>
+                                                                  <option>14</option>
+                                                                  <option>15</option>
+                                                                  <option>16</option>
+                                                                  <option>17</option>
+                                                                  <option>18</option>
+                                                                  <option>19</option>
+                                                                  <option>20</option>
+                                                              </select>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <div class="row">
+                                                  <div class="col-sm-2">
+                                                  </div>
+                                                  <div class="col-sm-10">
+                                                      <button type="button" class="btn btn-primary btn-sm" id="save" onclick="save()" name="save-details">
+                                                          Save & Continue</button>
+                                                      <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                                                          Cancel</button>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                             <script>$('#myModal').modal('show');</script>
+                             <script>
+                                data = {};
+                                  $("#save").on("click", function(e){
+                                    e.preventDefault();
+                                    data.select = $("#exampleSelect").value();
+                                    $(this).prev().click();
+
+                                });
+                                </script>
+                            <hr>
+              
+        <!--- Sponsors --->
+                  
+                    <div class="container-fluid bg-white fg-dark">
+                        <div class="container pt-10 pb-20">
+                            <div class="h1 mt-10 text-center">
+                              <span class="reduce-1 enlarge-1-md">Special thanks to</span>
+                            </div>
+                              <div class="row special-thanks">
+                                <div class="cell-md-2">
+                                    <a href="#"><img src="sponsors/FilmFest.png" width="150"></a>
+                                </div>
+                                <div class="cell-md-2">
+                                    <a href="#"><img src="sponsors/Paramount.png" width="150"></a>
+                                </div>
+                                <div class="cell-md-2">
+                                    <a href="#"><img src="sponsors/Sundance.png" width="150"></a>
+                                </div>
+                                <div class="cell-md-2">
+                                    <a href="#"><img src="sponsors/Tribeca.png" width="150"></a>
+                                </div>
+                                <div class="cell-md-2">
+                                    <a href="#"><img src="sponsors/YesYouCan.png" width="150"></a>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  <hr>
+
+        <!-- Footer -->
+
+                  <footer class="py-5 bg-black">
+                    <div class="container">
+                      <div class="col-lg-12">
+                        <p class="m-0 text-center text-white small">Copyright &copy; Brooklyn Outdoor Film Festival 2019</p>
+                      </div>
+                      <br>
+                        <div class="rounded-social-buttons">
+                            <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+                  </footer>
+        
+        <!-- Back to top button -->
+
+                  <a id="button"></a>
+
+        <!-- Bootstrap core JavaScript -->
+
+                  <script src="vendor/jquery/jquery.min.js"></script>
+                  <script src="vendor/bootstrap/js/bootstrap.min.css"></script>
+                  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled-4.7.4.min.js"></script>
+                  <script>
+                   $(".modal-btn").click( function(){
+                    $("#timePopup").toggle(300);
+                  });
+                  </script>
+                  <script type="text/javascript">
+                    $('.js-tilt').tilt({
+                      scale: 1.1
+                    })
+                  </script>
+                  <script>
+                    $('.navbar-collapse a').click(function(){
+                        $(".navbar-collapse").collapse('hide');
+                    });
+                  </script>
+                   <script>
+                    $('.jquery-background-video').bgVideo({fadeIn: 2000});
+                  </script>
+                  <script>
+                    var btn = $('#button');
+
+                        $(window).scroll(function() {
+                          if ($(window).scrollTop() > 300) {
+                            btn.addClass('show');
+                          } else {
+                            btn.removeClass('show');
+                          }
+                        });
+
+                        btn.on('click', function(e) {
+                          e.preventDefault();
+                          $('html, body').animate({scrollTop:0}, '300');
+                        });
+                  </script>
+        </body>
+</html>
